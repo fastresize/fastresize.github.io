@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resize Image to 50 KB Online – FastResize</title>
+  <meta name="description" content="Resize image to exactly 50 KB or under 50 KB online. Fast, free and secure image resizer.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-default-size="50">
+
+<!-- REUSABLE HEADER -->
+<div id="site-header"></div>
+
+<main class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Resize Image to <span>50 KB</span></h1>
+    <p>Instantly resize images to meet strict size limits.</p>
+  </section>
+
+  <!-- TOOL -->
+  <section class="tool-wrapper">
+    <div class="tool-card" id="dropZone">
+
+      <!-- UPLOAD BOX -->
+      <div class="upload-box" id="uploadBox">
+        <button class="upload-btn" id="uploadBtn">📤 Select / Upload Image</button>
+        <p class="upload-desc">Drag & drop image anywhere on page (desktop)</p>
+        <input type="file" id="upload" accept="image/*" hidden>
+      </div>
+
+      <!-- IMAGE PREVIEW -->
+      <div class="image-container" id="imageContainer">
+        <img id="previewImg" alt="Preview">
+        <button class="delete-btn" id="deleteBtn">✕</button>
+        <button class="change-btn" id="changeBtn">Change Image</button>
+      </div>
+
+      <!-- CONTROLS -->
+      <div class="controls">
+        <div class="size-select">
+          <select id="sizeSelect">
+            <option value="20">20 KB</option>
+            <option value="50">50 KB</option>
+            <option value="100">100 KB</option>
+            <option value="200">200 KB</option>
+            <option value="500">500 KB</option>
+            <option value="1024">1 MB</option>
+          </select>
+        </div>
+
+        <button class="resize-btn" id="resizeBtn">Resize Image</button>
+      </div>
+
+      <!-- ERROR -->
+      <div class="error-msg" id="errorMsg">
+        Please upload or select an image first.
+      </div>
+
+      <!-- LOADING -->
+      <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>Resizing…</p>
+      </div>
+
+      <!-- RESULT -->
+      <div class="result-box" id="result">
+        <div class="sizes">
+          <div>Original: <strong><span id="origSize"></span> KB</strong></div>
+          <div>Final: <strong><span id="newSize"></span> KB</strong></div>
+        </div>
+        <a id="download" class="download-btn" download="resized-50kb.jpg">
+          ⬇ Download Image
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="info-card">
+    <h2>Resize Image to Exactly 50 KB or Under 50 KB</h2>
+    <p>
+      FastResize helps you resize image to 50 KB or under 50 KB for job applications,
+      government forms, websites, and email uploads.
+    </p>
+    <p>
+      All image processing happens locally in your browser. Images are never uploaded
+      to any server, ensuring full privacy.
+    </p>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+      <summary>How do I resize an image to 50 KB?</summary>
+      <p>Upload your image, select 50 KB, and click resize.</p>
+    </details>
+
+    <details>
+      <summary>Is this tool free?</summary>
+      <p>Yes, FastResize is completely free.</p>
+    </details>
+
+    <details>
+      <summary>Will image quality be reduced?</summary>
+      <p>The tool balances size and quality automatically.</p>
+    </details>
+
+    <details>
+      <summary>Are images uploaded to a server?</summary>
+      <p>No. Everything happens locally in your browser.</p>
+    </details>
+  </section>
+
+</main>
+
+<!-- REUSABLE FOOTER -->
+<div id="site-footer"></div>
+
+<!-- DRAG OVERLAY -->
+<div class="drag-overlay" id="dragOverlay">
+  <div class="drag-overlay-text">Drop image anywhere</div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/resize.js"></script>
+
+</body>
+</html>

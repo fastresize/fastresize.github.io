@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resize Image to 20 KB Online – FastResize</title>
+  <meta name="description" content="Resize image to 20 KB or under 20 KB online. Free image resizer for passport photos, government forms and exam uploads.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-default-size="20">
+
+<!-- REUSABLE HEADER -->
+<div id="site-header"></div>
+
+<main class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Resize Image to <span>20 KB</span></h1>
+    <p>Resize images to meet strict 20 KB limits for passport photos and online forms.</p>
+  </section>
+
+  <!-- TOOL -->
+  <section class="tool-wrapper">
+    <div class="tool-card" id="dropZone">
+
+      <!-- UPLOAD BOX -->
+      <div class="upload-box" id="uploadBox">
+        <button class="upload-btn" id="uploadBtn">📤 Select / Upload Image</button>
+        <p class="upload-desc">Drag & drop image anywhere on page (desktop)</p>
+        <input type="file" id="upload" accept="image/*" hidden>
+      </div>
+
+      <!-- IMAGE PREVIEW -->
+      <div class="image-container" id="imageContainer">
+        <img id="previewImg" alt="Preview">
+        <button class="delete-btn" id="deleteBtn">✕</button>
+        <button class="change-btn" id="changeBtn">Change Image</button>
+      </div>
+
+      <!-- CONTROLS -->
+      <div class="controls">
+        <div class="size-select">
+          <select id="sizeSelect">
+            <option value="20">20 KB</option>
+            <option value="50">50 KB</option>
+            <option value="100">100 KB</option>
+            <option value="200">200 KB</option>
+            <option value="500">500 KB</option>
+            <option value="1024">1 MB</option>
+          </select>
+        </div>
+
+        <button class="resize-btn" id="resizeBtn">Resize Image</button>
+      </div>
+
+      <!-- ERROR -->
+      <div class="error-msg" id="errorMsg">
+        Please upload or select an image first.
+      </div>
+
+      <!-- LOADING -->
+      <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>Resizing…</p>
+      </div>
+
+      <!-- RESULT -->
+      <div class="result-box" id="result">
+        <div class="sizes">
+          <div>Original: <strong><span id="origSize"></span> KB</strong></div>
+          <div>Final: <strong><span id="newSize"></span> KB</strong></div>
+        </div>
+        <a id="download" class="download-btn" download="resized-20kb.jpg">
+          ⬇ Download Image
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="info-card">
+    <h2>Resize Image to Exactly 20 KB or Under 20 KB</h2>
+    <p>
+      FastResize allows you to resize image to 20 KB or under 20 KB online without installing
+      any software. This size is commonly required for passport photos, government forms,
+      exam applications, and online registrations.
+    </p>
+    <p>
+      The tool automatically compresses and resizes your image while maintaining the best
+      possible clarity. All processing happens locally in your browser for maximum privacy.
+    </p>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+      <summary>How do I resize an image to 20 KB?</summary>
+      <p>Upload your image, select 20 KB, and click the resize button.</p>
+    </details>
+
+    <details>
+      <summary>Why do government forms require image under 20 KB?</summary>
+      <p>Many portals limit file size to reduce server load and ensure fast uploads.</p>
+    </details>
+
+    <details>
+      <summary>Will image quality reduce at 20 KB?</summary>
+      <p>The tool balances compression and resolution to keep text and faces clear.</p>
+    </details>
+
+    <details>
+      <summary>Is this 20 KB image resizer free?</summary>
+      <p>Yes, FastResize is completely free to use.</p>
+    </details>
+
+    <details>
+      <summary>Are images uploaded to any server?</summary>
+      <p>No. All image processing happens locally in your browser.</p>
+    </details>
+  </section>
+
+</main>
+
+<!-- REUSABLE FOOTER -->
+<div id="site-footer"></div>
+
+<!-- DRAG OVERLAY -->
+<div class="drag-overlay" id="dragOverlay">
+  <div class="drag-overlay-text">Drop image anywhere</div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/resize.js"></script>
+
+</body>
+</html>
