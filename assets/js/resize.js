@@ -31,6 +31,15 @@ uploadBox.style.display = "block";
 uploadBtn.onclick = () => upload.click();
 changeBtn.onclick = () => upload.click();
 
+document.addEventListener("DOMContentLoaded", () => {
+  const sizeSelect = document.getElementById("sizeSelect");
+  const defaultSize = document.body.getAttribute("data-default-size");
+
+  if (sizeSelect && defaultSize) {
+    sizeSelect.value = defaultSize;
+  }
+});
+
 upload.onchange = () => {
   if (!upload.files[0]) return;
   handleFile(upload.files[0]);
@@ -130,6 +139,7 @@ document.addEventListener("dragenter", e => {
 
 
 
+    
 });
 
 document.addEventListener("dragleave", () => {
