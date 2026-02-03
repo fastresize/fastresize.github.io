@@ -1,0 +1,92 @@
+/* ================= HEADER ================= */
+
+.header{
+  background:#ffffff;
+  border-bottom:1px solid var(--border);
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.header-inner{
+  max-width:1100px;
+  margin:auto;
+  padding:16px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* LOGO */
+.logo{
+  font-size:22px;
+  font-weight:800;
+  background:linear-gradient(90deg,#2563eb,#16a34a);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+/* DESKTOP NAV */
+.nav{
+  display:flex;
+  align-items:center;
+}
+
+.nav a{
+  margin-left:18px;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:500;
+  color:#374151;
+}
+
+.nav a:hover{
+  color:#2563eb;
+}
+
+/* MENU BUTTON (MOBILE) */
+.menu-btn{
+  display:none;
+  font-size:26px;
+  background:none;
+  border:none;
+  cursor:pointer;
+  line-height:1;
+}
+
+/* MOBILE MENU */
+.mobile-menu{
+  display:none;
+  background:#ffffff;
+  border-top:1px solid var(--border);
+  padding:10px 20px;
+}
+
+.mobile-menu a{
+  display:block;
+  padding:12px 0;
+  font-size:15px;
+  font-weight:500;
+  color:#2563eb;
+  text-decoration:none;
+}
+
+.mobile-menu a:hover{
+  text-decoration:underline;
+}
+
+.mobile-menu.show{
+  display:block;
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+  .nav{
+    display:none;
+  }
+
+  .menu-btn{
+    display:block;
+  }
+}
+
