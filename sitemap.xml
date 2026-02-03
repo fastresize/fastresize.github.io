@@ -1,9 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://fastresize.net/</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
   </url>
+
+  <url>
+    <loc>https://fastresize.net/resize-image-to-20-kb.html</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
   <url>
     <loc>https://fastresize.net/resize-image-to-50-kb.html</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
   </url>
+
+  <url>
+    <loc>https://fastresize.net/compress-image-to-100-kb.html</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://fastresize.net/resize-image-200-kb.html</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://fastresize.net/legal/privacy-policy.html</loc>
+    <priority>0.4</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://fastresize.net/legal/terms.html</loc>
+    <priority>0.4</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://fastresize.net/legal/about-us.html</loc>
+    <priority>0.5</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
 </urlset>
